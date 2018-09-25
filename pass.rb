@@ -13,10 +13,10 @@ class Pass
       end
     end
 
-    puts "FINISHED!"
     target.close
+    puts "FINISHED!"
   end
-
+  
   def lencheck_two
     File.open("password.txt", "r") do |file_handle|
       file_handle.each_line do |line|
@@ -26,6 +26,21 @@ class Pass
       end
     end
   end
+	
+  def replace_colon
+    target = File.open("passwords.broken", "w")
 
+    File.open("john.pot", "r") do |file_handle|
+      file_handle.each_line do |line|
+
+        line[34] = " "
+        target.write(line)
+
+      end
+    end
+
+    target.close
+    puts "FINISHED!"
+  end
 
 end
