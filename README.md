@@ -1,6 +1,6 @@
 # Hash Cracking Assignment
 Majority of code for this module is missing, but here is a description of what this repository is about. <br />
-This was a module focused on Scalable Computing and majority of practical exercises for it were were: <br />
+This module was focused on Scalable Computing and majority of practical exercises for it were: <br />
 Using password cracking tools such as `John the Ripper` and `Hashcat` to crack sets of hashes of various difficulties, by running the programs on remote AWS servers, as the local machines were only powerful enough to solve the first few exercises.
 
 ## Description
